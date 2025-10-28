@@ -8,6 +8,7 @@ import { nitroV2Plugin } from '@tanstack/nitro-v2-vite-plugin'
 export default defineConfig({
   server: {
     port: 3000,
+    host: '0.0.0.0',
   },
   plugins: [
     tailwindcss(),
