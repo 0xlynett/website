@@ -25,6 +25,11 @@ export const Route = createRootRouteWithContext<{
       {
         title: 'hi hellloooo im lyn',
       },
+      { property: 'og:title', content: 'hi hellloooo im lyn' },
+      { property: 'og:description', content: 'i love you ^.^' },
+      { property: 'og:type', content: 'website' },
+      { name: 'twitter:card', content: 'summary_large_image' },
+      { property: 'og:image', content: 'https://lyn.alt.box/ily.png' },
     ],
     links: [
       { rel: 'stylesheet', href: appCss },
