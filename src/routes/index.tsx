@@ -12,6 +12,7 @@ import discord from '/discord.svg?url'
 import github from '/github.svg?url'
 import ethereum from '/ethereum.svg?url'
 import x from '/x.svg?url'
+import paragraph from '/paragraph.svg?url'
 import { Input } from '../components/ui/input'
 
 export const Route = createFileRoute('/')({
@@ -151,6 +152,13 @@ function Home() {
             <span className="hidden sm:inline">github: </span>
             <span>
               <a href="https://github.com/0xlynett">0xlynett</a>
+            </span>
+          </li>
+          <li>
+            <img src={paragraph} className="h-6 inline mr-2" />
+            <span className="hidden sm:inline">paragraph: </span>
+            <span>
+              <a href="https://paragraph.com/@0xlynett">[object Object]</a>
             </span>
           </li>
         </ol>
