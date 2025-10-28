@@ -1,0 +1,15 @@
+FROM node:22 AS build
+
+RUN curl -fsSL https://bun.sh/install | bash
+
+WORKDIR /app
+COPY . .
+RUN bun install
+RUN bun run build
+
+FROM oven/bun
+WORKDIR /app
+COPY --from=build /app/.output .
+
+EXPOSE 3000
+CMD ["bun", ".output/server/index.mjs"]
