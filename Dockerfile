@@ -5,7 +5,7 @@ RUN curl -fsSL https://bun.sh/install | bash
 WORKDIR /app
 COPY . .
 RUN ~/.bun/bin/bun install
-RUN ~/.bun/binbun run build
+RUN ~/.bun/bin/bun run build
 
 FROM oven/bun
 WORKDIR /app
