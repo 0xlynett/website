@@ -1,16 +1,9 @@
-FROM node:22 AS build
-
-RUN curl -fsSL https://bun.sh/install | bash
+FROM oven/bun
 
 WORKDIR /app
 COPY . .
-RUN ~/.bun/bin/bun install
-RUN ~/.bun/bin/bun run build
-
-FROM oven/bun
-WORKDIR /app
-COPY --from=build /app/.output .
-COPY --from=build /app/package.json .
+RUN bun install
+RUN bun run build
 
 ENV HOST=0.0.0.0
 ENV PORT=3000
