@@ -7,6 +7,8 @@ import {
 import * as React from 'react'
 import type { QueryClient } from '@tanstack/react-query'
 import appCss from '~/styles/app.css?url'
+import '@fontsource-variable/bricolage-grotesque'
+import bg from '/bg.png'
 
 export const Route = createRootRouteWithContext<{
   queryClient: QueryClient
@@ -21,7 +23,7 @@ export const Route = createRootRouteWithContext<{
         content: 'width=device-width, initial-scale=1',
       },
       {
-        title: 'TanStack Start Starter',
+        title: 'hi hellloooo im lyn',
       },
     ],
     links: [
@@ -65,7 +67,12 @@ function RootDocument({ children }: { children: React.ReactNode }) {
       <head>
         <HeadContent />
       </head>
-      <body>
+      <body className="dark text-foreground font-sans bg-background">
+        <img
+          src={bg}
+          alt=""
+          className="min-h-screen h-full w-full object-cover top-0 left-0 fixed -z-10 pointer-events-none"
+        />
         {children}
         <Scripts />
       </body>

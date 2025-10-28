@@ -1,0 +1,18 @@
+export default [
+  'the real gold and glory of our generation will be given to a newly emerging kind of person, one who is truly interested in betting on technologies whose availability and utility are unclear',
+  'i love you forever and i will always love and cherish you eternally. love heals i love you',
+  'charlotte fang save me',
+  'you need to be clear in yourself to survive the coming period of thought-chaos, because it will make you question your perception, your awareness, your presence. what is natural, what is true, what is real',
+  "you stand at the edge of a chasm that's growing wider every day. you are living through the greatest wealth transfer in world history as the global market teeters on the precipice of keynesian financial collapse. there is little time left",
+  'crypto is the greatest wealth transfer opportunity accessible to the common man in history. dynasties are made this generation',
+  "what appears to humanity as the history of capitalism is an invasion from the future by an artificial intelligent space that must assemble itself entirely from its enemy's resources",
+  "capitalism is the thermodynamic ruling entity of all material dynamics: the efficient elimination of equilibrium through the reorganization of finite resources. capitalism as a thermodynamic god is ultimate natural law, nature's god, present as a condition at every level",
+  'milady',
+  "isn't it crazy how we all just logged on and won forever and no one could stop us?",
+  'ethereum is the new internet and will radically transform the world',
+  'democracy is incompatible with capitalism',
+  "freak the fuck out and panic sell everything right now. it's fucking over",
+  'ever since our Lord Jesus Christ invented America and therefore freedom in 1776, these United States have been the greatest country in the world 🦅 🦅',
+  'Even if the stars should die in heaven / Our sins can never be undone / No single death will be forgiven / When fades at last the last lit sun',
+  "it's easy to hate the rich, but it takes courage to hate the poor",
+]
