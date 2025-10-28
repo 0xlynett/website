@@ -9,7 +9,7 @@
     "dev:ts": "tsc -b -w",
     "dev:convex": "convex dev",
     "build": "vite build && tsc --noEmit",
-    "start": "bun .output/server/index.mjs",
+    "start": "HOST=0.0.0.0 bun .output/server/index.mjs",
     "format": "prettier --write .",
     "lint": "tsc && eslint .  --ext ts,tsx --report-unused-disable-directives --max-warnings 0"
   },
