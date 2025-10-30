@@ -285,7 +285,9 @@ function Home() {
           <a href="https://altivox.net/blog">altivox blog</a>
         </p>
 
-        <h2 className="font-bold text-xl">executive intern @ 2077 labs</h2>
+        <h2 className="font-bold text-xl">
+          executive intern @ 2077 labs (2024-2025)
+        </h2>
         <p>
           worked on original 2077 landing page, etherpedia, 2077 research and
           general brand assets. led the team as unofficial leader during absence
