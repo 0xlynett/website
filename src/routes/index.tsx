@@ -273,15 +273,15 @@ function Home() {
         </p>
 
         <h2 className="font-bold text-xl">
-          sales lead @ altivox networks (2025-)
+          sales lead @ altivox networks (2025)
         </h2>
         <p>
           designed the logo and other brand assets for altivox, ctrlservers &
-          sahara compute. currently managing{' '}
+          sahara compute. managed the{' '}
           <a href="https://x.com/AltivoxNetworks">the x/twitter account</a> and
           acquired strategic partnership with{' '}
           <a href="https://hyperware.ai">hyperware</a> and other companies. also
-          writing technical articles for{' '}
+          wrote some technical articles for{' '}
           <a href="https://altivox.net/blog">altivox blog</a>
         </p>
 
