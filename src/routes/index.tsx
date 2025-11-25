@@ -263,7 +263,18 @@ function Home() {
       <div className="p-6 max-w-3xl mx-auto mt-4 bg-background text-foreground space-y-4">
         <h1 className="font-bold text-2xl">work</h1>
 
-        <h2 className="font-bold text-xl">lead @ seerboard (2025-)</h2>
+        <h2 className="font-bold text-xl">
+          chief milady officer @ <a href="https://codature.net">codature llc</a>{' '}
+          (2025-)
+        </h2>
+        <p>
+          graphic design and frontend development for various clients.
+          responsible for sneaking milady eyes into codature brand assets
+        </p>
+
+        <h2 className="font-bold text-xl">
+          lead @ <a href="https://seerboard.com">seerboard</a> (2025-)
+        </h2>
         <p>
           building and maintaining a platform to track predictions made by
           public figures.{' '}
@@ -273,7 +284,7 @@ function Home() {
         </p>
 
         <h2 className="font-bold text-xl">
-          sales lead @ altivox networks (2025)
+          sales lead @ <a href="https://altivox.net">altivox networks</a> (2025)
         </h2>
         <p>
           designed the logo and other brand assets for altivox, ctrlservers &
@@ -286,12 +297,14 @@ function Home() {
         </p>
 
         <h2 className="font-bold text-xl">
-          executive intern @ 2077 labs (2024-2025)
+          executive intern @ <a href="https://2077.xyz">2077 labs</a>{' '}
+          (2024-2025)
         </h2>
         <p>
-          worked on original 2077 landing page, etherpedia, 2077 research and
-          general brand assets. led the team as unofficial leader during absence
-          of CEO. wrote a recovery module smart contract for safe multisig
+          worked on original 2077 landing page, etherpedia,{' '}
+          <a href="https://research.2077.xyz">2077 research</a> and general
+          brand assets. led the team as unofficial leader during absence of CEO.
+          wrote a recovery module smart contract for safe multisig
         </p>
       </div>
     </div>
