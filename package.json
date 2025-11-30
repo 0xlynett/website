@@ -4,18 +4,14 @@
   "sideEffects": false,
   "type": "module",
   "scripts": {
-    "dev": "convex dev --once && concurrently -r bun:dev:web bun:dev:convex",
-    "dev:web": "vite dev --host",
+    "dev": "vite dev --host",
     "dev:ts": "tsc -b -w",
-    "dev:convex": "convex dev",
     "build": "vite build && tsc --noEmit",
     "start": "HOST=0.0.0.0 bun .output/server/index.mjs",
     "format": "prettier --write .",
     "lint": "tsc && eslint .  --ext ts,tsx --report-unused-disable-directives --max-warnings 0"
   },
   "dependencies": {
-    "@convex-dev/react-query": "^0.0.0-alpha.11",
-    "@convex-dev/sharded-counter": "^0.1.8",
     "@fontsource-variable/bricolage-grotesque": "^5.2.10",
     "@fontsource/poppins": "^5.2.7",
     "@radix-ui/react-slot": "^1.2.3",
@@ -26,14 +22,12 @@
     "@tanstack/react-start": "^1.132.2",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
-    "convex": "^1.28.0",
     "lucide-react": "^0.548.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "tailwind-merge": "^3.3.1"
   },
   "devDependencies": {
-    "@convex-dev/eslint-plugin": "^1.0.0",
     "@tailwindcss/vite": "^4.1.13",
     "@tanstack/eslint-config": "^0.3.2",
     "@types/react": "^19.1.13",

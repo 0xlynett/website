@@ -5,14 +5,11 @@ import {
   createRootRouteWithContext,
 } from '@tanstack/react-router'
 import * as React from 'react'
-import type { QueryClient } from '@tanstack/react-query'
 import appCss from '~/styles/app.css?url'
 import '@fontsource-variable/bricolage-grotesque'
 import bg from '/bg.png'
 
-export const Route = createRootRouteWithContext<{
-  queryClient: QueryClient
-}>()({
+export const Route = createRootRouteWithContext()({
   head: () => ({
     meta: [
       {

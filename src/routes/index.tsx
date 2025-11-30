@@ -1,19 +1,14 @@
 import { createFileRoute } from '@tanstack/react-router'
-import { useMutation } from 'convex/react'
-import { useSuspenseQuery } from '@tanstack/react-query'
-import { convexQuery } from '@convex-dev/react-query'
-import { api } from '../../convex/_generated/api'
 import milady from '/milady.jpg?url'
 import { Button } from '../components/ui/button'
 import funFacts from '../facts.ts'
-import { useEffect, useState, type ChangeEvent } from 'react'
+import { useEffect, useState } from 'react'
 import remilia from '/remilia.webp?url'
 import discord from '/discord.svg?url'
 import github from '/github.svg?url'
 import ethereum from '/ethereum.svg?url'
 import x from '/x.svg?url'
 import paragraph from '/paragraph.svg?url'
-import { Input } from '../components/ui/input'
 
 export const Route = createFileRoute('/')({
   component: Home,
@@ -21,9 +16,6 @@ export const Route = createFileRoute('/')({
 
 function Home() {
   const [text, setText] = useState('loading...')
-  const { data } = useSuspenseQuery(convexQuery(api.myFunctions.getCount, {}))
-
-  const sayMilady = useMutation(api.myFunctions.milady)
 
   function reroll() {
     const rand = Math.floor(Math.random() * funFacts.length)
@@ -38,28 +30,6 @@ function Home() {
   useEffect(() => {
     reroll()
   }, [])
-
-  const [miladyValue, setMiladyValue] = useState('')
-
-  function miladyChange(e: ChangeEvent<HTMLInputElement>) {
-    if (
-      e.target.value == 'm' ||
-      e.target.value == 'mi' ||
-      e.target.value == 'mil' ||
-      e.target.value == 'mila' ||
-      e.target.value == 'milad' ||
-      e.target.value == 'milady' ||
-      e.target.value == ''
-    )
-      setMiladyValue(e.target.value)
-  }
-
-  useEffect(() => {
-    if (miladyValue == 'milady') {
-      setMiladyValue('')
-      sayMilady()
-    }
-  }, [miladyValue])
 
   return (
     <div className="mx-2 my-16">
@@ -94,15 +64,6 @@ function Home() {
             </li>
           </ol>
           <div className="clear-both" />
-          <div>
-            people have typed milady {data} {data > 1 ? 'times' : 'time'} so
-            far. say milady!
-          </div>
-          <Input
-            value={miladyValue}
-            placeholder="milady"
-            onChange={miladyChange}
-          />
         </div>
       </div>
 
@@ -273,11 +234,11 @@ function Home() {
         </p>
 
         <h2 className="font-bold text-xl">
-          lead @ <a href="https://seerboard.com">seerboard</a> (2025-)
+          lead @ <a href="https://seerboard.com">seerboard</a> (2025)
         </h2>
         <p>
-          building and maintaining a platform to track predictions made by
-          public figures.{' '}
+          built and maintained a platform to track predictions made by public
+          figures. transferred seerboard to a different person.{' '}
           <a href="https://x.com/seerboard/status/1965102277922029936">
             see twitter thread
           </a>
