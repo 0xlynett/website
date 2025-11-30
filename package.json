@@ -9,6 +9,7 @@
     "build": "vite build && tsc --noEmit",
     "preview": "bun run build && vite preview",
     "format": "prettier --write .",
+    "deploy": "wrangler deploy",
     "lint": "tsc && eslint .  --ext ts,tsx --report-unused-disable-directives --max-warnings 0"
   },
   "dependencies": {
