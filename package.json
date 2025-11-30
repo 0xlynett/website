@@ -10,7 +10,7 @@
     "preview": "bun run build && vite preview",
     "format": "prettier --write .",
     "deploy": "wrangler deploy",
-    "lint": "tsc"
+    "lint": "tsc --noEmit"
   },
   "dependencies": {
     "@fontsource-variable/bricolage-grotesque": "^5.2.10",
