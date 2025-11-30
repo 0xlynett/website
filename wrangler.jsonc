@@ -1,0 +1,6 @@
+{
+  "name": "lyn-site",
+  "main": "@tanstack/react-start/server-entry",
+  "compatibility_date": "2024-11-13",
+  "compatibility_flags": ["nodejs_compat"],
+}
