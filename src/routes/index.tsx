@@ -59,9 +59,6 @@ function Home() {
             </li>
             <li>milady milady milady</li>
             <li>etherean free-market cryptoanarchist</li>
-            <li>
-              building <a href="https://seerboard.com">Seerboard</a>
-            </li>
           </ol>
           <div className="clear-both" />
         </div>
